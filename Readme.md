@@ -28,3 +28,12 @@
 | D10 | N/A, USE D10 | TARGET_RST | RST | 5  |
 | GND | 6 | GND | GND  | 6 |
 
+## Troubleshooting
+
+If you get slow effects, it's wrong FUSE configuration. Try to run 
+
+```
+"C:\Program Files (x86)\Arduino\hardware\tools\avr/bin/avrdude" "-CC:\Program Files (x86)\Arduino\hardware\tools\avr/etc/avrdude.conf" -v -patmega168p -cstk500v1 -PCOM4 -b19200 -U lfuse:w:0xE2:m
+```
+
+from console
