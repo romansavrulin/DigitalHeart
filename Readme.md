@@ -15,3 +15,16 @@
 
 Размер - 50 х 50 мм.
 Источник питания – Li-Ion или Li-Pol аккумулятор 3,7В
+
+
+## Programmer wiring
+
+| Nano pins | NANO ISP PIN | Nano net | Target Net | Target Pin |
+|-----|-----|-----|-----|----|
+| D12 | 1 | MOSI | MISO | 1 |
+| 5V  | 2 | 5V | 5V   | 2 |
+| D13 | 3 | SCK | SCK  | 3 |
+| D11 | 4 | MISO | MOSI | 4 |
+| D10 | N/A, USE D10 | TARGET_RST | RST | 5  |
+| GND | 6 | GND | GND  | 6 |
+
